@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.prices {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.prices__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  margin: 240px 715px 127px 715px;
+}
+@media (max-width: 767px) {
+  .prices__title {
+    font-size: 32px;
+    margin-top: 88px 340px 70px 340px;
+  }
+}
+
+.prices__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: none;
+  align-items: center;
+}
+
+.prices__card-1 {
+  grid-column: span 1;
+  width: 619px;
+  height: 486px;
+  border: 3px solid #9FBFFF;
+  padding: 100px 100px 160px 100px;
+  margin: 0 110px 110px 110px;
+}
+@media (max-width: 767px) {
+  .prices__card-1 {
+    width: 296px;
+    height: 263px;
+    border: 2px solid #9FBFFF;
+    padding: 65px 45px 80px 45px;
+    margin: 0 60px 60px 60px;
+  }
+}
+
+.prices__card-2 {
+  grid-column: span 1;
+  width: 619px;
+  height: 486px;
+  border: 3px solid #9FBFFF;
+  padding: 100px 100px 160px 100px;
+  margin: 0 110px 110px 0;
+}
+@media (max-width: 767px) {
+  .prices__card-2 {
+    width: 296px;
+    height: 263px;
+    border: 2px solid #9FBFFF;
+    padding: 65px 45px 80px 45px;
+    margin: 0 60px 60px 0;
+  }
+}
+
+.prices__card-3 {
+  grid-column: span 1;
+  width: 619px;
+  height: 486px;
+  border: 3px solid #9FBFFF;
+  padding: 100px 100px 160px 100px;
+  margin: 0 110px 150px 110px;
+}
+@media (max-width: 767px) {
+  .prices__card-3 {
+    width: 296px;
+    height: 263px;
+    border: 2px solid #9FBFFF;
+    padding: 65px 45px 80px 45px;
+    margin: 0 60px 100px 60px;
+  }
+}
+
+.prices__card-4 {
+  grid-column: span 1;
+  width: 619px;
+  height: 486px;
+  border: 3px solid #9FBFFF;
+  padding: 100px 100px 160px 100px;
+  margin: 0 110px 150px 0;
+}
+@media (max-width: 767px) {
+  .prices__card-4 {
+    width: 296px;
+    height: 263px;
+    border: 2px solid #9FBFFF;
+    padding: 65px 45px 80px 45px;
+    margin: 0 60px 100px 0;
+  }
+}
+
+.prices__card-months,
+.prices__card-classes,
+.prices__card-price {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+
+.prices__card-months {
+  font-size: 40px;
+  line-height: 53px;
+}
+@media (max-width: 767px) {
+  .prices__card-months {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.prices__card-classes {
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 45px;
+}
+@media (max-width: 767px) {
+  .prices__card-classes {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 35px;
+  }
+}
+
+.prices__card-price {
+  font-size: 40px;
+  line-height: 58px;
+  padding-bottom: 150px;
+}
+@media (max-width: 767px) {
+  .prices__card-price {
+    font-size: 20px;
+    line-height: 29px;
+    padding-bottom: 90px;
+  }
+}/*# sourceMappingURL=styles.css.map */
