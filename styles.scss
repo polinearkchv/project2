@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin font{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+}
+
+@mixin display {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: none;
+}
+
+@mixin prices__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38%;
+    border: 3px solid #9FBFFF;
+    }
+
+@mixin prices__card-media {
+    height: 35%;
+    border: 2px solid #9FBFFF;
+}
+
+.prices {
+    max-width: 1600px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.prices__title {
+@include font;
+font-size: 64px;
+line-height: 85px;
+text-align: center;
+margin-top: 14%;
+margin-bottom: 8%;
+    @media(max-width: 767px) {
+    font-size: 32px;
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
+}
+
+.prices__cards {
+@include display;
+}
+
+.prices__card-1 {
+@include prices__card;
+margin: 0 7% 9% 7%;
+@media(max-width: 767px) {
+    @include prices__card-media;
+    margin: 0 8% 8% 8%;
+}
+}
+
+.prices__card-2 {
+@include prices__card;
+margin: 0 7% 9% 0;
+    @media(max-width: 767px) {
+    @include prices__card-media;
+    margin: 0 8% 8% 0;
+    }
+}
+
+.prices__card-3 {
+@include prices__card;
+margin: 0 7% 12% 7%;
+    @media(max-width: 767px) {
+    @include prices__card-media;
+    margin: 0 8% 14% 8%;
+}
+}
+
+.prices__card-4 {
+@include prices__card;
+margin: 0 7% 12% 0;
+    @media(max-width: 767px) {
+    @include prices__card-media;
+    margin: 0 8% 14% 0;
+    }
+}
+
+.prices__card-months,
+.prices__card-classes,
+.prices__card-price {
+@include font;
+text-align: center;
+}
+
+.prices__card-months {
+    font-size: 8%;
+    line-height: 10%;
+    @media(max-width: 767px) {
+    font-size: $font-size__card-media;
+    line-height: 27px;
+    }
+}
+
+.prices__card-classes {
+    font-size: 7%;
+    line-height: 9%;
+    margin-bottom: 9%;
+    @media(max-width: 767px) {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 14%;
+    }
+}
+
+.prices__card-price {
+    font-size: 8%;
+    line-height: 12%;
+    @media(max-width: 767px) {
+    font-size: $font-size__card-media;
+    line-height: 29px;
+    }
+}
